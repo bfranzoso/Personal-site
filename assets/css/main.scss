@@ -1,0 +1,14 @@
+// 0-tools
+// Tools are for things like 'resets, bootstrap' all
+// CSS frameworks should be put in tools.
+@import "0-tools/normalize";
+
+// 1-base
+@import "1-base/base";
+// Base is used for sitewide styles 'li, ul, body, ect..'
+
+// 2-sections
+// Sections are used for specific portions of the site.
+
+// 3-layouts
+// Layouts are for things like 'blog page' anything with a different layout.
