@@ -499,6 +499,26 @@ body {
   z-index: 2;
   text-align: center; }
 
+.container {
+  padding: 0 25px; }
+  .container h1 {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px; }
+  .container p {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 30px; }
+  .container .line {
+    height: 5px;
+    width: 140px;
+    display: block;
+    background: RGBA(255, 76, 46, 1);
+    margin-bottom: 40px; }
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,6 +574,10 @@ body {
     background-size: cover;
     outline: 20px solid RGBA(40, 40, 48, 0.5);
     outline-offset: -20px; }
+    .split .left .blog {
+      background: white;
+      height: 100%;
+      border-right: 20px solid RGBA(255, 76, 46, 1); }
     .split .left .flex {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -561,3 +585,79 @@ body {
       .split .left .flex img {
         position: relative;
         z-index: 2; }
+
+.more {
+  background-color: RGBA(255, 76, 46, 1);
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  padding: 15px 25px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out; }
+  .more:hover {
+    color: white;
+    background-color: RGBA(236, 74, 46, 1); }
+
+.blog {
+  width: 50%;
+  float: left;
+  top: 0;
+  left: 0;
+  background-color: white;
+  outline: 10px solid RGBA(40, 44, 52, 0.1);
+  outline-offset: -10px;
+  height: 100%;
+  position: relative; }
+
+.post {
+  margin-bottom: 20px;
+  border: 5px solid RGBA(40, 44, 52, 0.1);
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .post h3 {
+    font-size: 28px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-bottom: 3px solid RGBA(255, 76, 46, 1); }
+
+.meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .meta .date, .meta .cat {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .meta .date {
+    background: RGBA(255, 76, 46, 1);
+    height: 120px;
+    width: 60px; }
+  .meta .cat {
+    background: RGBA(236, 74, 46, 1);
+    height: 120px;
+    width: 60px; }
