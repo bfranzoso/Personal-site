@@ -497,27 +497,41 @@ body {
       flex-wrap: wrap;
   width: 100%; }
 
-.flex-child {
+.flex-child-half {
   width: 50%;
   height: auto; }
-  .flex-child .shoutout {
+  .flex-child-half .shoutout {
     background: #F3EB3E;
     height: 340px; }
-  .flex-child #shoutout1 {
+  .flex-child-half #shoutout1 {
     background: url("/assets/img/city.jpg") no-repeat center center;
     background-size: cover; }
-    .flex-child #shoutout1 .shoutout-logo {
+    .flex-child-half #shoutout1 .shoutout-logo {
       -ms-flex-item-align: center;
           align-self: center; }
-      .flex-child #shoutout1 .shoutout-logo .shoutout-logo-img {
+      .flex-child-half #shoutout1 .shoutout-logo .shoutout-logo-img {
         width: 300px; }
-  .flex-child .recent-posts {
+  .flex-child-half .recent-posts {
     height: 340px;
     background: #fff;
     border-right: 10px solid #FF4C2E; }
-  .flex-child .text {
+  .flex-child-half .text {
     background: #fff;
     height: 680px; }
+
+.flex-child-third {
+  width: 33.33333333333%;
+  height: auto; }
+  .flex-child-third .featured-work {
+    height: 240px;
+    background: green;
+    border-top: 10px solid #FF4C2E; }
+  .flex-child-third #featured-work-1 {
+    background: url("/assets/img/bendesk2.png") no-repeat center center;
+    background-size: cover; }
+  .flex-child-third #featured-work-2 {
+    background: url("/assets/img/bendesk.png") no-repeat center center;
+    background-size: cover; }
 
 .bar {
   height: auto;
