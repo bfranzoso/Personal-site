@@ -462,14 +462,94 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.section-heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  padding-bottom: 10px; }
+
+.heading-underline {
+  width: 50px;
+  height: 5px;
+  background: #FF4C2E;
+  display: block; }
+
+.section-text {
+  margin: 0;
+  padding: 7% 0;
+  font-size: 32px;
+  font-weight: 500; }
+
+.text-container {
+  padding: 5% 5%; }
+
+.flex-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%; }
+
+.flex-section-parent, .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
+.flex-child {
+  width: 50%;
+  height: auto; }
+  .flex-child .shoutout {
+    background: #F3EB3E;
+    height: 340px; }
+  .flex-child #shoutout1 {
+    background: url("/assets/img/city.jpg") no-repeat center center;
+    background-size: cover; }
+    .flex-child #shoutout1 .shoutout-logo {
+      -ms-flex-item-align: center;
+          align-self: center; }
+      .flex-child #shoutout1 .shoutout-logo .shoutout-logo-img {
+        width: 300px; }
+  .flex-child .recent-posts {
+    height: 340px;
+    background: #fff;
+    border-right: 10px solid #FF4C2E; }
+  .flex-child .text {
+    background: #fff;
+    height: 680px; }
+
 .bar {
-  height: 72px;
+  height: auto;
   position: absolute;
   z-index: 2;
   width: 100%;
   top: 0;
   left: 0;
-  border-bottom: 5px solid red; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .bar .logo {
+    padding-left: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .bar nav {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 25px; }
+    .bar nav ul {
+      list-style: none; }
+      .bar nav ul li {
+        display: inline;
+        margin: 0 15px; }
 
 .gigantic, .hero {
   height: 100%;
@@ -477,7 +557,7 @@ body {
   position: relative; }
 
 #homepage-big {
-  background: url("/assets/img/hero.jpg") no-repeat center center;
+  background: url("/assets/img/bendesk.png") no-repeat center center;
   background-size: cover; }
 
 .gigantic--overlay {

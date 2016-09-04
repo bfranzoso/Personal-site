@@ -1,11 +1,102 @@
+// Flex secton
+.section-heading
+  margin: 0
+  padding: 0
+  font-weight: 700
+  padding-bottom: 10px
+
+.heading-underline
+  width: 50px
+  height: 5px
+  background: #FF4C2E
+  display: block
+
+.section-text
+  margin: 0
+  padding: 7% 0
+  font-size: 32px
+  font-weight: 500
+
+.text-container
+  padding: 5% 5%
+
+.flex-container
+  justify-content: center
+  height: 100%
+
+.flex-section-parent, .flex-container
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+
+.flex-child
+  width: 50%
+  height: auto
+
+  // Shoutout Section flex
+  .shoutout
+    background: #F3EB3E
+    height: 340px
+
+  #shoutout1
+    background: url('/assets/img/city.jpg') no-repeat center center
+    background-size: cover
+
+    .shoutout-logo
+      align-self: center
+
+      .shoutout-logo-img
+        width: 300px
+
+  .recent-posts
+    height: 340px
+    background: #fff
+    border-right: 10px solid #FF4C2E
+
+    // End Shoutout Section flex
+
+  .text
+    background: #fff
+    height: 680px
+
+
+
+
+
+
+
+
+
+
 .bar
-  height: 72px
+  height: auto
   position: absolute
   z-index: 2
   width: 100%
   top: 0
   left: 0
-  border-bottom: 5px solid red
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .logo
+    padding-left: 25px
+    padding-top: 40px
+    padding-bottom: 40px
+
+  nav
+    color: white
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    padding-right: 25px
+
+    ul
+      list-style: none
+
+      li
+        display: inline
+        margin: 0 15px
 
 .gigantic, .hero
   height: 100%
@@ -13,7 +104,7 @@
   position: relative
 
 #homepage-big
-  background: url('/assets/img/hero.jpg') no-repeat center center
+  background: url('/assets/img/bendesk.png') no-repeat center center
   background-size: cover
 
 .gigantic--overlay
