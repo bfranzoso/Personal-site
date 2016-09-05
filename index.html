@@ -2,7 +2,7 @@
 layout: default
 title: Ben Franzoso - You may enter
 ---
-
+<!--
 <div class="gigantic--overlay"></div>
 
 <div class="gigantic" id="homepage-big">
@@ -13,10 +13,55 @@ title: Ben Franzoso - You may enter
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- Flexbox layout -->
+<section class="flex-layout">
+
+  <!-- Half of page (50% width) -->
+  <div class="flex-col-6">
+    <!-- Callout portion (order: 1) -->
+    <div class="shoutout-box">
+      <div class="shoutout-overlay"></div>
+      <div class="flex-container">
+        <div class="shoutout-logo">
+          <img class="shoutout-logo-img" src="/assets/img/logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Recent Posts -->
+    <div class="recent-posts">
+      <div class="text-container">
+        <h2 class="section-heading">Recent Posts</h2>
+        <span class="heading-underline"></span>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Half of page (50% width) -->
+  <div class="flex-col-6">
+    <div class="about-box">
+      <div class="text-container">
+        <h2 class="section-heading">About</h2>
+        <span class="heading-underline"></span>
+        <p class="section-text">
+          Hello, my name is Ben if you couldn't tell already.<br><br>
+          I like to build and learn about websites, so day I co-founded
+          a small design shop, ironincly we named it <strong><em>The Small Web Shop</em></strong>.
+          <br><br>Fast forward a year later and I'm proud to annouce my small little design shop
+          has grown into a hobby to a full time job.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
 
 <!-- Flexbox Layout -->
-<section class="flex-section-parent">
+<!-- <section class="flex-section-parent">
 
   <div class="flex-child-half">
     <div class="shoutout" id="shoutout1">
@@ -111,4 +156,4 @@ title: Ben Franzoso - You may enter
       </div>
     </div>
   </div>
-</main>
+</main> -->

@@ -477,11 +477,77 @@ body {
 .section-text {
   margin: 0;
   padding: 7% 0;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500; }
 
 .text-container {
-  padding: 5% 5%; }
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto; }
+  .flex-layout .flex-col-6:nth-child(2) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+  .flex-layout .flex-col-6 {
+    width: 100%; }
+    .flex-layout .flex-col-6 .shoutout-box {
+      height: 340px;
+      background: honeydew;
+      background: url("/assets/img/city.jpg") no-repeat center center;
+      background-size: cover;
+      outline: 10px solid RGBA(40, 40, 48, 0.5);
+      outline-offset: -10px; }
+      .flex-layout .flex-col-6 .shoutout-box .shoutout-overlay {
+        background: #28223B;
+        opacity: 0.7;
+        height: 340px;
+        width: 100%;
+        position: absolute;
+        z-index: 1; }
+      .flex-layout .flex-col-6 .shoutout-box .shoutout-logo {
+        -ms-flex-item-align: center;
+            align-self: center; }
+        .flex-layout .flex-col-6 .shoutout-box .shoutout-logo .shoutout-logo-img {
+          width: 300px;
+          position: relative;
+          z-index: 2; }
+    .flex-layout .flex-col-6 .recent-posts {
+      height: 340px;
+      background: white; }
+    .flex-layout .flex-col-6 .about-box {
+      height: 680px;
+      background: white; }
+
+@media (min-width: 1024px) {
+  .flex-layout .flex-col-6:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .flex-layout .flex-col-6 {
+    width: 50%; }
+  .flex-layout .flex-col-6 .shoutout-box .shoutout-overlay {
+    width: 50%; }
+  .flex-layout .flex-col-6 .recent-posts {
+    border-right: 10px solid #FF4C2E; }
+  .section-text {
+    font-size: 28px; } }
+
+.text-container {
+  padding: 5%; }
 
 .flex-container {
   -webkit-box-pack: center;
@@ -506,11 +572,6 @@ body {
   .flex-child-half #shoutout1 {
     background: url("/assets/img/city.jpg") no-repeat center center;
     background-size: cover; }
-    .flex-child-half #shoutout1 .shoutout-logo {
-      -ms-flex-item-align: center;
-          align-self: center; }
-      .flex-child-half #shoutout1 .shoutout-logo .shoutout-logo-img {
-        width: 300px; }
   .flex-child-half .recent-posts {
     height: 340px;
     background: #fff;
@@ -523,7 +584,7 @@ body {
   width: 33.33333333333%;
   height: auto; }
   .flex-child-third .featured-work {
-    height: 240px;
+    height: 270px;
     background: green;
     border-top: 10px solid #FF4C2E; }
   .flex-child-third #featured-work-1 {

@@ -1,4 +1,3 @@
-// Flex secton
 .section-heading
   margin: 0
   padding: 0
@@ -14,11 +13,96 @@
 .section-text
   margin: 0
   padding: 7% 0
-  font-size: 32px
+  font-size: 24px
   font-weight: 500
 
 .text-container
-  padding: 5% 5%
+  padding: 5%
+  display: flex
+  flex-direction: column
+
+
+
+// Mobile Flexbox layout
+// Mobile First
+.flex-layout
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  height: auto
+
+  .flex-col-6:nth-child(2)
+    order: -1
+
+  .flex-col-6
+    width: 100%
+
+    // FIRST HALF
+    .shoutout-box
+      height: 340px
+      background: honeydew
+      background: url('/assets/img/city.jpg') no-repeat center center
+      background-size: cover
+      outline: 10px solid RGBA(40, 40, 48, 0.50)
+      outline-offset: -10px
+
+      .shoutout-overlay
+        background: #28223B
+        opacity: 0.7
+        height: 340px
+        width: 100%
+        position: absolute
+        z-index: 1
+
+      .shoutout-logo
+        align-self: center
+
+        .shoutout-logo-img
+          width: 300px
+          position: relative
+          z-index: 2
+
+    .recent-posts
+      height: 340px
+      background: white
+
+    // SECOND HALF
+    .about-box
+      height: 680px
+      background: white
+
+
+
+
+// END MOBILE
+// Tablet Flexbox layout
+// Start Tablet
+
+// END TABLET
+// DESKTOP Flexbox layout
+@media (min-width: 1024px)
+
+  .flex-layout .flex-col-6:nth-child(2)
+    order: 2
+
+  .flex-layout .flex-col-6
+    width: 50%
+
+  .flex-layout .flex-col-6 .shoutout-box .shoutout-overlay
+    width: 50%
+
+  .flex-layout .flex-col-6 .recent-posts
+    border-right: 10px solid #FF4C2E
+
+  .section-text
+    font-size: 28px
+
+
+
+// Flex secton
+
+.text-container
+  padding: 5%
 
 .flex-container
   justify-content: center
@@ -42,11 +126,6 @@
     background: url('/assets/img/city.jpg') no-repeat center center
     background-size: cover
 
-    .shoutout-logo
-      align-self: center
-
-      .shoutout-logo-img
-        width: 300px
 
   .recent-posts
     height: 340px
@@ -64,7 +143,7 @@
   height: auto
 
   .featured-work
-    height: 240px
+    height: 270px
     background: green
     border-top: 10px solid #FF4C2E
 
