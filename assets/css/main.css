@@ -477,7 +477,7 @@ body {
 .section-text {
   margin: 0;
   padding: 7% 0;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 500; }
 
 .text-container {
@@ -489,6 +489,28 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .heading .more {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .heading .more a {
+      -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease; }
+      .heading .more a:hover {
+        color: #FF4C2E; }
+      .heading .more a .fa-arrow-right {
+        padding-left: 10px; }
 
 .flex-layout {
   display: -webkit-box;
@@ -531,6 +553,16 @@ body {
     .flex-layout .flex-col-6 .about-box {
       height: 680px;
       background: white; }
+  .flex-layout .flex-col-12 {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-top: 10px solid #FF4C2E; }
+    .flex-layout .flex-col-12 .text-snippet {
+      background: white;
+      text-align: center;
+      padding: 5% 0; }
 
 @media (min-width: 1024px) {
   .flex-layout .flex-col-6:nth-child(2) {
@@ -544,7 +576,7 @@ body {
   .flex-layout .flex-col-6 .recent-posts {
     border-right: 10px solid #FF4C2E; }
   .section-text {
-    font-size: 28px; } }
+    font-size: 29px; } }
 
 .text-container {
   padding: 5%; }
@@ -740,22 +772,6 @@ body {
       .split .left .flex img {
         position: relative;
         z-index: 2; }
-
-.more {
-  background-color: RGBA(255, 76, 46, 1);
-  color: white;
-  font-weight: 600;
-  font-style: italic;
-  padding: 15px 25px;
-  font-size: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all 0.1s ease-out;
-          transition: all 0.1s ease-out; }
-  .more:hover {
-    color: white;
-    background-color: RGBA(236, 74, 46, 1); }
 
 .blog {
   width: 50%;
